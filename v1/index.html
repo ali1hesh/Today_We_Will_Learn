@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Coiny&family=Sono:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Today We Will learn</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="logo">
+          <img
+            src="logo.png"
+            height="68"
+            width="68"
+            alt="Today We will Learn Logo"
+          />
+          <h1>Today We will Learn</h1>
+        </div>
+        <button class="btn-open btn btn-large">Share a fact</button>
+      </header>
+
+      <form class="fact-form hidden">
+        <input type="text" placeholder="Share a fact with the world...." />
+        <span>200</span>
+        <input type="text" placeholder="Trustworthy source" />
+        <select>
+          <option value="Choose Category">Choose Category</option>
+          <option value="Technology">Technology</option>
+          <option value="Science">Science</option>
+          <option value="Finance">Finance</option>
+          <option value="Society">Society</option>
+          <option value="Entertainment">Entertainment</option>
+          <option value="Health">Health</option>
+          <option value="History">History</option>
+          <option value="News">News</option>
+        </select>
+        <button class="btn btn-large">Post</button>
+      </form>
+      <main class="main">
+        <aside>
+          <ul>
+            <li class="category"><button class="btn btn-all">All</button></li>
+            <li class="category">
+              <button
+                class="btn btn-category"
+                style="background-color: #3b82f6"
+              >
+                Technology
+              </button>
+            </li>
+            <li class="category">
+              <button
+                class="btn btn-category"
+                style="background-color: #16a34a"
+              >
+                Science
+              </button>
+            </li>
+            <li class="category">
+              <button
+                class="btn btn-category"
+                style="background-color: #eab308"
+              >
+                Finance
+              </button>
+            </li>
+            <li class="category">
+              <button
+                class="btn btn-category"
+                style="background-color: #ef4444"
+              >
+                Society
+              </button>
+            </li>
+            <li class="category">
+              <button
+                class="btn btn-category"
+                style="background-color: #14b8a6"
+              >
+                Entertainment
+              </button>
+            </li>
+            <li class="category">
+              <button
+                class="btn btn-category"
+                style="background-color: #f97316"
+              >
+                Health
+              </button>
+            </li>
+            <li class="category">
+              <button
+                class="btn btn-category"
+                style="background-color: #db2777"
+              >
+                History
+              </button>
+            </li>
+            <li class="category">
+              <button
+                class="btn btn-category"
+                style="background-color: #8b5cf6"
+              >
+                News
+              </button>
+            </li>
+          </ul>
+        </aside>
+        <section>
+          <ul class="facts-list">
+            <li class="fact">
+              <p>
+                React is being developed by Meta (formerly facebook).
+                <a
+                  class="source"
+                  href="https://opensource.fb.com/"
+                  target="_blank"
+                  >(Source)</a
+                >
+              </p>
+              <span class="tag" style="background-color: #3b82f6"
+                >technology</span
+              >
+              <div class="vote-buttons">
+                <button>👍<strong>24</strong></button>
+                <button>🤯<strong>64</strong></button>
+                <button>⛔️<strong>44</strong></button>
+              </div>
+            </li>
+            <li class="fact">
+              <p>
+                Millennial dads spend 3 times as much time with their kids than
+                their fathers spent with them. In 1982, 43% of fathers had never
+                changed a diaper. Today, that number is down to 3%.
+                <a
+                  class="source"
+                  href="https://www.mother.ly/parenting/millennial-dads-spend-more-time-with-their-kids"
+                  target="_blank"
+                  >(Source)</a
+                >
+              </p>
+              <span class="tag" style="background-color: #ef4444">society</span>
+              <div class="vote-buttons">
+                <button>👍<strong>24</strong></button>
+                <button>🤯<strong>64</strong></button>
+                <button>⛔️<strong>44</strong></button>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+    <!-- <div class="footer">
+      <p>Designed By <span>Ali Hesham Raza</span></p>
+    </div> -->
+
+    <footer class="footer">Designed By Ali Hesham Raza</footer>
+  </body>
+</html>

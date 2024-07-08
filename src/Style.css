@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100%;
+
+  background: #0f0c29; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  color: #d0f1bf;
+  font-family: "sono", sans-serif;
+  padding: 48px 64px 0px;
+}
+
+.vote-buttons button {
+  border: none;
+  background-color: #3b54d1;
+  padding: 6px 12px;
+  border-radius: 50px;
+  font-size: 18px;
+  color: inherit;
+  font-family: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+form {
+  background: #0f0c29; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  margin-bottom: 40px;
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 16px;
+}
+.fact {
+  font-size: 20px;
+  line-height: 1.4;
+  background: #0f0c29; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  margin-top: 16px;
+  padding: 16px 40px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+
+  gap: 24px;
+}
+h1 {
+  font-size: 42px;
+  text-transform: uppercase;
+  font-family: "coiny", sans-serif;
+  color: #f8fafc;
+  margin-top: 10px;
+}
+.header {
+  margin-bottom: 40px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer {
+  color: whitesmoke;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.logo {
+  display: flex;
+  gap: 20px;
+}
+.logo img {
+  width: 88px;
+  height: 80px;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  height: 80vh;
+}
+@media (max-width: 900px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+}
+.disputed {
+  color: #ff0000;
+  font-weight: 600;
+  margin-right: 10px;
+}
+.message {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: 24px;
+}
+.hidden {
+  display: none !important;
+}
+#root {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.tag {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: "coiny";
+  padding: 3px;
+  border-radius: 50px;
+}
+.vote-buttons {
+  margin-left: auto;
+  flex-shrink: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.vote-buttons button:hover {
+  background-color: #1b1937;
+}
+.fact-second {
+  margin-left: auto;
+  min-width: 535px;
+  text-align: end;
+}
+
+.fact-form input,
+.fact-form select,
+.fact-form span {
+  background: #0f0c29; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  border-radius: 100px;
+  padding: 16px 00px;
+  font-size: 18px;
+  color: inherit;
+  font-family: inherit;
+}
+.fact-form input::placeholder {
+  text-align: left;
+  color: #c8c6c4;
+}
+.fact-form span {
+  font-weight: 600;
+  font-size: 18px;
+}
+.fact-form input:first-child {
+  min-width: 335px;
+}
+ul {
+  list-style: none;
+}
+.source:link,
+.source:visited {
+  color: #bb81bd;
+  text-decoration: none;
+  margin-left: 10px;
+  transition: 0.5s;
+}
+.span {
+  min-width: 80px;
+  text-align: center;
+}
+.source:hover,
+.source:active {
+  color: rgb(228, 84, 59);
+}
+.btn:hover {
+  transform: scale(110%) rotate(-2deg);
+}
+.btn-post {
+  margin-left: auto;
+}
+.btn {
+  border: none;
+  font-family: "coiny", sans-serif;
+  line-height: 1;
+  text-transform: uppercase;
+  font-size: 17px;
+  padding: 16px 0 13px;
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: inherit;
+  transition: 0.3s;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.btn-large {
+  font-size: 30px;
+  padding: 20px 32px 17px;
+}
+.btn-all {
+  margin-bottom: 16px;
+  width: 100%;
+}
+.category {
+  margin: 16px;
+}
+.btn-category {
+  width: 100%;
+  background-image: none;
+}
+@media (max-width: 1200px) {
+  .fact {
+    flex-direction: column;
+    align-items: end;
+    gap: 12px;
+  }
+}
+@media (max-width: 1000px) {
+  body {
+    padding: 32px 48px;
+  }
+  .fact-form {
+    flex-direction: column;
+    margin: auto;
+  }
+  .fact-form input,
+  .fact-form select {
+    width: auto;
+  }
+}
