@@ -1,8 +1,5 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## ABOUT THE SITE
+# ABOUT THE SITE
 
 Developed a site where users can share their thoughts or facts with others.
 Users can interact with others in several ways such as upvoting or downvoting their shared facts. 
